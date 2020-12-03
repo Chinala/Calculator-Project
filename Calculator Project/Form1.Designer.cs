@@ -42,6 +42,7 @@
             this.bc = new System.Windows.Forms.Button();
             this.butadd = new System.Windows.Forms.Button();
             this.buteq = new System.Windows.Forms.Button();
+            this.bCE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox2
@@ -180,7 +181,7 @@
             // 
             this.bc.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.bc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.bc.Location = new System.Drawing.Point(249, 235);
+            this.bc.Location = new System.Drawing.Point(250, 235);
             this.bc.Name = "bc";
             this.bc.Size = new System.Drawing.Size(65, 61);
             this.bc.TabIndex = 4;
@@ -212,6 +213,18 @@
             this.buteq.UseVisualStyleBackColor = false;
             this.buteq.Click += new System.EventHandler(this.buteq_Click);
             // 
+            // bCE
+            // 
+            this.bCE.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.bCE.Location = new System.Drawing.Point(250, 302);
+            this.bCE.Name = "bCE";
+            this.bCE.Size = new System.Drawing.Size(65, 61);
+            this.bCE.TabIndex = 4;
+            this.bCE.Text = "CE";
+            this.bCE.UseVisualStyleBackColor = false;
+            this.bCE.Click += new System.EventHandler(this.bc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,6 +233,7 @@
             this.ClientSize = new System.Drawing.Size(397, 375);
             this.Controls.Add(this.buteq);
             this.Controls.Add(this.butadd);
+            this.Controls.Add(this.bCE);
             this.Controls.Add(this.bc);
             this.Controls.Add(this.n7);
             this.Controls.Add(this.n0);
@@ -254,6 +268,7 @@
         private System.Windows.Forms.Button bc;
         private System.Windows.Forms.Button butadd;
         private System.Windows.Forms.Button buteq;
+        private System.Windows.Forms.Button bCE;
     }
 }
 

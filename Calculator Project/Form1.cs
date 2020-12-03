@@ -155,6 +155,11 @@ namespace Calculator_Project
             EndResult = 0;
             Operation = "0";
         }
+
+        private void bCE_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = "0";
+        }
         
         private void butadd_Click(object sender, EventArgs e)
         {
@@ -174,5 +179,6 @@ namespace Calculator_Project
                 FirstNumber = EndResult;
             }
         }
+
     }
 }
