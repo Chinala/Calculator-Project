@@ -43,6 +43,8 @@
             this.butadd = new System.Windows.Forms.Button();
             this.buteq = new System.Windows.Forms.Button();
             this.bCE = new System.Windows.Forms.Button();
+            this.butsub = new System.Windows.Forms.Button();
+            this.butmult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox2
@@ -225,12 +227,38 @@
             this.bCE.UseVisualStyleBackColor = false;
             this.bCE.Click += new System.EventHandler(this.bc_Click);
             // 
+            // butsub
+            // 
+            this.butsub.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.butsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.butsub.Location = new System.Drawing.Point(320, 101);
+            this.butsub.Name = "butsub";
+            this.butsub.Size = new System.Drawing.Size(65, 59);
+            this.butsub.TabIndex = 8;
+            this.butsub.Text = "-";
+            this.butsub.UseVisualStyleBackColor = false;
+            this.butsub.Click += new System.EventHandler(this.butsub_Click_1);
+            // 
+            // butmult
+            // 
+            this.butmult.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.butmult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.butmult.Location = new System.Drawing.Point(250, 168);
+            this.butmult.Name = "butmult";
+            this.butmult.Size = new System.Drawing.Size(64, 61);
+            this.butmult.TabIndex = 9;
+            this.butmult.Text = "x";
+            this.butmult.UseVisualStyleBackColor = false;
+            this.butmult.Click += new System.EventHandler(this.butmult_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(397, 375);
+            this.Controls.Add(this.butmult);
+            this.Controls.Add(this.butsub);
             this.Controls.Add(this.buteq);
             this.Controls.Add(this.butadd);
             this.Controls.Add(this.bCE);
@@ -269,6 +297,8 @@
         private System.Windows.Forms.Button butadd;
         private System.Windows.Forms.Button buteq;
         private System.Windows.Forms.Button bCE;
+        private System.Windows.Forms.Button butsub;
+        private System.Windows.Forms.Button butmult;
     }
 }
 

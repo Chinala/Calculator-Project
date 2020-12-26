@@ -43,7 +43,7 @@ namespace Calculator_Project
         {
             if (textBox2.Text == "0" && textBox2.Text != null)
             {
-                textBox2.Text = "1";
+                textBox2.Text = "2";
             }
             else
             {
@@ -156,7 +156,7 @@ namespace Calculator_Project
             Operation = "0";
         }
 
-        private void bCE_Click(object sender, EventArgs e)
+        private void bCE_Click(object sender, EventArgs e) //Sets the textbox to 0.
         {
             textBox2.Text = "0";
         }
@@ -168,7 +168,7 @@ namespace Calculator_Project
             Operation = "+";
         }
 
-        private void buteq_Click(object sender, EventArgs e) // bug if "=" is clicked it will sqrt the previous input.
+        private void buteq_Click(object sender, EventArgs e) // bug if "=" is clicked again, it will sqrt the previous input.
         {
             SecondNumber = Convert.ToDouble(textBox2.Text);
 
@@ -178,7 +178,32 @@ namespace Calculator_Project
                 textBox2.Text = Convert.ToString(EndResult);
                 FirstNumber = EndResult;
             }
+            if (Operation == "-") //if operation is subtraction, the result will be the first number inputted - 2nd number, result would be in a string shown in textbox.
+            {
+                EndResult = (FirstNumber - SecondNumber);
+                textBox2.Text = Convert.ToString(EndResult);
+                FirstNumber = EndResult;
+            }
+            if (Operation == "*") //Operation is multiplication.
+            {
+                EndResult = (FirstNumber * SecondNumber);
+                textBox2.Text = Convert.ToString(EndResult);
+                FirstNumber = EndResult;
+            }
         }
 
+        private void butsub_Click_1(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox2.Text);
+            textBox2.Text = "0";
+            Operation = "-";
+        }
+
+        private void butmult_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox2.Text);
+            textBox2.Text = "0";
+            Operation = "*";
+        }
     }
 }
