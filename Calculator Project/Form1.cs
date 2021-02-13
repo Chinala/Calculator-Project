@@ -190,6 +190,12 @@ namespace Calculator_Project
                 textBox2.Text = Convert.ToString(EndResult);
                 FirstNumber = EndResult;
             }
+            if (Operation =="/") //Operation is division.
+            {
+                EndResult = (FirstNumber / SecondNumber);
+                textBox2.Text = Convert.ToString(EndResult);
+                FirstNumber = EndResult;
+            }
         }
 
         private void butsub_Click_1(object sender, EventArgs e)
@@ -204,6 +210,13 @@ namespace Calculator_Project
             FirstNumber = Convert.ToDouble(textBox2.Text);
             textBox2.Text = "0";
             Operation = "*";
+        }
+
+        private void butdiv_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox2.Text);
+            textBox2.Text = "0";
+            Operation = "/";
         }
     }
 }

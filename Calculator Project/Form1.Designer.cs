@@ -45,6 +45,7 @@
             this.bCE = new System.Windows.Forms.Button();
             this.butsub = new System.Windows.Forms.Button();
             this.butmult = new System.Windows.Forms.Button();
+            this.butdiv = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox2
@@ -251,12 +252,25 @@
             this.butmult.UseVisualStyleBackColor = false;
             this.butmult.Click += new System.EventHandler(this.butmult_Click);
             // 
+            // butdiv
+            // 
+            this.butdiv.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.butdiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.butdiv.Location = new System.Drawing.Point(320, 168);
+            this.butdiv.Name = "butdiv";
+            this.butdiv.Size = new System.Drawing.Size(65, 61);
+            this.butdiv.TabIndex = 10;
+            this.butdiv.Text = "/";
+            this.butdiv.UseVisualStyleBackColor = false;
+            this.butdiv.Click += new System.EventHandler(this.butdiv_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(397, 375);
+            this.Controls.Add(this.butdiv);
             this.Controls.Add(this.butmult);
             this.Controls.Add(this.butsub);
             this.Controls.Add(this.buteq);
@@ -299,6 +313,7 @@
         private System.Windows.Forms.Button bCE;
         private System.Windows.Forms.Button butsub;
         private System.Windows.Forms.Button butmult;
+        private System.Windows.Forms.Button butdiv;
     }
 }
 
